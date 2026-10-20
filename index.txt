@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sneaxdesigns | Developer & Digital Artist</title>
+    <style>
+        /* Stile Generale Cyberpunk / Neon */
+        body {
+            background-color: #08080c;
+            color: #ffffff;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        /* Testo evidenziato con l'arancione neon della tua Peugeot */
+        .neon-orange {
+            color: #ff5500;
+            text-shadow: 0 0 10px rgba(212, 53, 0, 0.8), 0 0 30px rgba(255, 85, 0, 0.4);
+        }
+
+        /* Testo evidenziato con il ciano/azzurro neon */
+        .neon-cyan {
+            color: #00f3ff;
+            text-shadow: 0 0 10px rgba(0, 243, 255, 0.8), 0 0 30px rgba(0, 243, 255, 0.4);
+        }
+
+        /* Intestazione principale (Hero Section) */
+        header {
+            padding: 100px 20px;
+            background: radial-gradient(circle at center, #14141f 0%, #08080c 100%);
+            border-bottom: 2px solid #ff5500;
+            box-shadow: 0 0 20px rgba(255, 85, 0, 0.2);
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            margin: 0;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        header p {
+            font-size: 1.3rem;
+            margin: 15px 0 0 0;
+            font-weight: 300;
+            letter-spacing: 1px;
+        }
+
+        /* Contenitore principale delle sezioni */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        section {
+            margin-bottom: 80px;
+        }
+
+        h2 {
+            font-size: 2rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 30px;
+            border-left: 4px solid #00f3ff;
+            padding-left: 15px;
+            text-align: left;
+        }
+
+        p.description {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: #b3b3cc;
+            text-align: left;
+            margin-bottom: 40px;
+        }
+
+        /* Griglia per mostrare le immagini (Stile Instagram) */
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .portfolio-card {
+            background-color: #11111a;
+            border: 1px solid #222233;
+            border-radius: 12px;
+            overflow: hidden;
+            transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .portfolio-card:hover {
+            transform: translateY(-5px);
+            border-color: #ff5500;
+            box-shadow: 0 10px 20px rgba(255, 85, 0, 0.15);
+        }
+
+        .portfolio-card img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .card-info {
+            padding: 20px;
+            text-align: left;
+        }
+
+        .card-info h3 {
+            margin: 0 0 10px 0;
+            font-size: 1.2rem;
+        }
+
+        .card-info p {
+            margin: 0;
+            color: #8c8cbf;
+            font-size: 0.95rem;
+        }
+
+        /* Pulsante di contatto */
+        .cta-button {
+            display: inline-block;
+            background-color: transparent;
+            color: #00f3ff;
+            border: 2px solid #00f3ff;
+            padding: 15px 40px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 30px;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            margin-top: 20px;
+            box-shadow: 0 0 10px rgba(0, 243, 255, 0.2);
+        }
+
+        .cta-button:hover {
+            background-color: #00f3ff;
+            color: #08080c;
+            box-shadow: 0 0 20px rgba(0, 243, 255, 0.6);
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: #555577;
+            font-size: 0.9rem;
+            border-top: 1px solid #11111a;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HERO SECTION -->
+    <header>
+        <h1 class="neon-orange">sneaxdesigns</h1>
+        <p>Street & Neon Vibes | <span class="neon-cyan">HTML • Java • C • AI Graphics</span></p>
+    </header>
+
+    <div class="container">
+        
+        <!-- SEZIONE INFO -->
+        <section id="about">
+            <h2 class="neon-cyan">Il Progetto</h2>
+            <p class="description">
+                Unisco la logica e l'ottimizzazione del codice scritto in <strong>Java</strong> e <strong>C</strong> con strutture web reattive in <strong>HTML</strong>. Il tutto viene potenziato da un'identità visiva unica basata su grafiche cyberpunk, atmosfere motoristiche e concept d'impatto generati e rifiniti tramite intelligenza artificiale.
+            </p>
+        </section>
+
+        <!-- SEZIONE PORTFOLIO GRAFICO E CODICE -->
+        <section id="portfolio">
+            <h2 class="neon-cyan">Portfolio & Creazioni</h2>
+            <div class="portfolio-grid">
+                
+                <!-- CARD PROGETTO 1 -->
+                <div class="portfolio-card">
+                    <!-- Sostituisci "album musicale.jpg" con il nome esatto del tuo file immagine nella cartella -->
+                    <img src="album musicale.jpg" alt="Street & Neon Artwork">
+                    <div class="card-info">
+                        <h3 class="neon-orange">Concept Design / Art</h3>
+                        <p>Immagini e loghi ad altissimo impatto visivo focalizzati sul mondo automotive e ambientazioni notturne.</p>
+                    </div>
+                </div>
+
+                <!-- CARD PROGETTO 2 -->
+                <div class="portfolio-card">
+                    <!-- Sostituisci "Dream of a Girl 2.jpg" con il nome esatto del tuo file immagine nella cartella -->
+                    <img src="Dream of a Girl 2.jpg" alt="Copertine Musicali">
+                    <div class="card-info">
+                        <h3 class="neon-orange">Cover Art & Branding</h3>
+                        <p>Design di copertine digitali pronte per album musicali, tracce Spotify, poster e miniature YouTube.</p>
+                    </div>
+                </div>
+
+                <!-- CARD PROGETTO 3 -->
+                <div class="portfolio-card">
+                    <div style="height: 300px; background: #161622; display: flex; align-items: center; justify-content: center; font-size: 3.5rem;">💻</div>
+                    <div class="card-info">
+                        <h3 class="neon-orange">Sviluppo Software</h3>
+                        <p>Strutture logiche pulite, script di utility in C e applicazioni desktop orientate agli oggetti in Java e siti web in HTML.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SEZIONE CONTATTI -->
+        <section id="contact">
+            <h2 class="neon-cyan">Avvia un Progetto</h2>
+            <p class="description" style="text-align: center;">
+                Hai bisogno di una landing page blindata nel codice o di una veste grafica esclusiva per il tuo brand? Parliamone.
+            </p>
+            <a href="https://www.instagram.com/sneaxdesigns/" target="_blank" class="cta-button">Scrivimi su Instagram</a>
+        </section>
+
+    </div>
+
+    <footer>
+        &copy; 2026 sneaxdesigns. All rights reserved. Powered by GitHub Pages.
+    </footer>
+
+</body>
+</html>
